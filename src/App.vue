@@ -1,28 +1,44 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <Header />
+    <Slider/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from '@/components/Header.vue'
+import Slider from '@/components/Slider.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Header,
+    Slider
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: url("assets/fonts/Inter/Inter-Regular.ttf");
+  }
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    src: url("assets/fonts/Inter/Inter-Bold.ttf");
+  }
+  @font-face {
+    font-family: "Nexa";
+    font-style: normal;
+    font-weight: 700;
+    src: url("assets/fonts/Nexa/Nexa-Bold.otf");
+  }
+  body {
+    font-family: Inter;
+    margin: 0;
+  }
 </style>
